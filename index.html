@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRIDAY | Employee Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-orb"></div>
+    <div class="container">
+        <header>
+            <div class="status-indicator"></div>
+            <p>SYSTEM STATUS: ONLINE | EMPLOYEE MANAGEMENT</p>
+        </header>
+
+        <main>
+            <h1>EMS PORTAL</h1>
+            
+            <form id="employee-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="role" placeholder="Role" required>
+                <input type="number" id="salary" placeholder="Salary" required>
+                <button type="submit">Add Employee</button>
+            </form>
+
+            <div class="terminal-window">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Salary</th>
+                            <th>Attendance</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="employee-list"></tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Stark Industries Interface</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
